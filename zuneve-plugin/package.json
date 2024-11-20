@@ -1,0 +1,25 @@
+{
+  "name": "ru-en-translator",
+  "displayName": "RU-EN Translator",
+  "description": "A VS Code extension to translate selected Russian text to English.",
+  "version": "1.0.0",
+  "publisher": "df6593be-0efa-62d5-8c9f-66378267150c",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.translate",
+        "title": "Translate Text from Russian to English"
+      }
+    ]
+  },
+  "activationEvents": [
+      "extension.translate"
+    ],
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
